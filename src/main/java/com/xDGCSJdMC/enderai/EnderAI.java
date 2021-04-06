@@ -1,13 +1,7 @@
 package com.xDGCSJdMC.enderai;
 
-import com.xDGCSJdMC.enderai.init.ModRecipes;
-import com.xDGCSJdMC.enderai.proxy.CommonProxy;
-import com.xDGCSJdMC.enderai.tabs.EnderAllTab;
-import com.xDGCSJdMC.enderai.util.Reference;
-import com.xDGCSJdMC.enderai.util.handlers.RegistryHandler;
+import com.xDGCSJdMC.enderai.common.CommonProxy;
 
-import com.xDGCSJdMC.enderai.world.ModWorldGen;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -15,36 +9,36 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_MINECRAFTVERSIONS)
+@Mod(modid = EnderAI.MODID, name = EnderAI.NAME, version = EnderAI.VERSION, acceptedMinecraftVersions = "1.8.9")
 public class EnderAI {
+	
+	public static final String MODID = "enderai";
+    public static final String NAME = "Ender AI";
+    public static final String VERSION = "1.0.0";
 
-    @Instance
+    @Instance(EnderAI.MODID)
     public static EnderAI instance;
 
-    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
+    @EventHandler
+    public void preInit(FMLPreInitializationEvent event)
+    {
+        proxy.preInit(event);
+    }
+
+    @EventHandler
+    public void init(FMLInitializationEvent event)
+    {
+        proxy.init(event);
+    }
+
+    @EventHandler
+    public void postInit(FMLPostInitializationEvent event)
+    {
+        proxy.postInit(event);
+    }
+    
+    @SidedProxy(clientSide = "com.xDGCSJdMC.enderai.client.ClientProxy", 
+            serverSide = "com.xDGCSJdMC.enderai.common.CommonProxy")
     public static CommonProxy proxy;
-    
-    @EventHandler
-    public void PreInit(FMLPreInitializationEvent event){
-
-        RegistryHandler.preInitRegisttries();
-        GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
-    }
-
-    @EventHandler
-    public void Init(FMLInitializationEvent event){
-
-        ModRecipes.init();
-    	
-    }
-
-    @EventHandler
-    public void PostInit(FMLPostInitializationEvent event){
- 
-    }
-    
-    public static CreativeTabs ENDER_AI = new EnderAllTab();
-    
 }

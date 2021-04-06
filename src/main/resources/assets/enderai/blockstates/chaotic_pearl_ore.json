@@ -1,5 +1,5 @@
 {
-  "variants": {
-    "normal": { "model": "enderai:chaotic_pearl_ore" }
-  }
+    "variants": {
+        "normal": { "model": "enderai:chaotic_pearl_ore" }
+    }
 }

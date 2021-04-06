@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "enderai:items/flame_pearl"
+        "layer0": "enderai:items/enderman_head"
     },
     "display": {
         "thirdperson": {
