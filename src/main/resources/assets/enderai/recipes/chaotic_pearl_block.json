@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "   ",
+        " CC",
+        " CC"
+    ],
+    
+    "key":
+    {
+        "C":
+        {
+            "item": "enderai:chaotic_pearl"
+        }
+    },
+    
+    "result":
+    {
+        "item": "enderai:chaotic_pearl_block",
+        "count": 1
+    }
+}

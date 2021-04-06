@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "C C",
+    "C C"
+  ],
+  "key": {
+    "C": {
+      "item": "enderai:chaotic_pearl"
+    },
+    "result": {
+      "item": "enderai:enderman_feet",
+      "count": 1
+    }
+  }
+}

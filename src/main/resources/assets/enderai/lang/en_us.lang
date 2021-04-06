@@ -1,0 +1,28 @@
+//items
+item.wisdom_pearl.name=Wisdom pearl
+item.flame_pearl.name=Flame pearl
+item.chaotic_pearl.name=Chaotic pearl
+item.chaotic_pearl_pellet.name=Chaotic pearl pellet
+item.chaotic_pearl_pickaxe.name=Chaotic pearl pickaxe
+item.chaotic_pearl_sword.name=Chaotic pearl sword
+
+//armors
+item.enderman_head.name=Enderman head
+item.enderman_tripe.name=Enderman tripe
+item.enderman_knee.name=Enderman knee
+item.enderman_feet.name=Enderman feet
+
+
+//blocks
+tile.chaotic_pearl_block.name=Chaotic pearl block
+tile.chaotic_pearl_ore.name=Chaotic pearl ore
+
+//entity
+entity.wisdom_enderman.name=Wisdom enderman
+entity.flame_enderman.name=Flame enderman
+
+//tabs
+itemGroup.ender_tab=Ender AI
+
+//food
+item.wisdom_enderman_food.name=Wisdom enderman food

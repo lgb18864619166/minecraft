@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "WFW",
+        "FWF",
+        "FFF"
+    ],
+    
+    "key":
+    {
+         "F":
+        {
+            "item": "enderai:flame_pearl"
+        },
+        
+         "W":
+        {
+            "item": "enderai:wisdom_pearl"
+        }
+        
+    },
+
+    "pattern":
+    [
+        "   ",
+        " PP",
+        " PP"
+    ],
+
+    "key":
+    {
+        "P":
+        {
+            "item": "enderai:chaotic_pearl_pellet"
+        }
+
+    },
+
+    
+    "result":
+    {
+        "item": "enderai:chaotic_pearl",
+        "count": 1
+    },
+
+
+    "ingredients":
+    [
+
+        {
+            "item": "enderai:chaotic_pearl_block"
+        }
+
+
+    ],
+
+    "result":
+    {
+        "item": "modid:object",
+        "count": 4
+    }
+}
